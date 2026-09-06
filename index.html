@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Simon Says Game</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>
+            <span class="simon">Simon</span>
+            <span class="says">Says</span>
+        </h1>
+        <h2>Tap screen to start the Game</h2>
+
+        <div class="btn-container">
+            <div class="line-one">
+                <div class="btn pink" type="button" id="pink"></div>
+                <div class="btn skyblue" type="button" id="skyblue"></div>
+            </div>
+
+            <div class="line-two">
+
+                <div class="btn gold" type="button" id="gold"></div>
+                <div class="btn voilet" type="button" id="voilet"></div>
+            </div>
+        </div>
+
+        <!-- Dashboard card for High Score, Restart, and current score -->
+        <div class="dashboard">
+            <div class="card">
+                <i class="fa-solid fa-trophy trophy-icon"></i>
+                <div class="card-info">
+                    <span class="card-label">High Score</span>
+                    <span class="card-value" id="high-score">0</span>
+                </div>
+            </div>
+
+            <div class="restart-wrapper">
+                <button class="restart-btn" id="restart-btn" title="Restart Game">
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+                <span class="restart-text">Restart</span>
+            </div>
+
+            <div class="card">
+                <i class="fa-regular fa-star star-icon"></i>
+                <div class="card-info">
+                    <span class="card-label">Score</span>
+                    <span class="card-value" id="curr-score">0</span>
+                </div>
+            </div>
+        </div>
+
+        <p class="instruction-text">Watch the sequence and repeat it!</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
