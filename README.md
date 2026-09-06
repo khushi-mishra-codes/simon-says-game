@@ -1,4 +1,5 @@
 # 🎮Simon Says Game
+**Live Demo:** [click here to play](https://khushi-mishra-codes.github.io/simon-says-game/)
 A fun and interactive memory game built using HTML, CSS and JavaScript.
 The objective is to remember and repeat the sequence of colored buttons.
 As you progress, the sequence becomes longer, making the game more challenging!
